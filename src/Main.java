@@ -1,8 +1,11 @@
-import figure.Dot;
+import data.enums;
+import linalg.Vector3d;
+import linalg.matrix.RotationMatrix3d;
 
 public class Main {
     public static void main(String[] args) {
-        Dot d1 = new Dot(1, 1, 1);
-        System.out.println(d1.getDistance());
+        RotationMatrix3d rotation = new RotationMatrix3d().setRotationAxis(enums.Axis.X).setRotationAngle(Math.PI / 2);
+        Vector3d v = new Vector3d(1, 1, 0);
+        System.out.println(rotation.multiply(v).array[2]);
     }
 }

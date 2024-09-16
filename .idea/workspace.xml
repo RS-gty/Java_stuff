@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="u1">
+    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="class addition">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/camera/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/enums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linalg/Vector3d.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linalg/matrix/Matrix3d.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linalg/matrix/RotationMatrix3d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/figure/Dot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Dot.java" afterDir="false" />
     </list>
@@ -39,7 +46,9 @@
   "associatedIndex": 6
 }]]></component>
   <component name="ProjectId" id="2m9gcCjKGcvgGKNQMfEmXy8Wsso" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,6 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -74,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726494285552</updated>
-      <workItem from="1726494286568" duration="1222000" />
+      <workItem from="1726494286568" duration="12415000" />
     </task>
     <task id="LOCAL-00001" summary="u1">
       <option name="closed" value="true" />
@@ -84,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726495206314</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="class addition">
+      <option name="closed" value="true" />
+      <created>1726495813017</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726495813017</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="u1" />
-    <option name="LAST_COMMIT_MESSAGE" value="u1" />
+    <MESSAGE value="class addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="class addition" />
   </component>
 </project>
