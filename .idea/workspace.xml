@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="class addition">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/camera/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/enums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linalg/Vector3d.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linalg/matrix/Matrix3d.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linalg/matrix/RotationMatrix3d.java" afterDir="false" />
+    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="linalg addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Dot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Dot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/camera/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/camera/Camera.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726494285552</updated>
-      <workItem from="1726494286568" duration="12415000" />
+      <workItem from="1726494286568" duration="15815000" />
     </task>
     <task id="LOCAL-00001" summary="u1">
       <option name="closed" value="true" />
@@ -102,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726495813017</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="linalg addition">
+      <option name="closed" value="true" />
+      <created>1726510130926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726510130926</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="u1" />
     <MESSAGE value="class addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="class addition" />
+    <MESSAGE value="linalg addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="linalg addition" />
   </component>
 </project>
