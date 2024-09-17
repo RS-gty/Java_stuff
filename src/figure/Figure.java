@@ -5,6 +5,7 @@ import linalg.Vector3d;
 public abstract class Figure {
     public double x,y,z ;
     public Vector3d position ;
+    public double radius;
     public String tag = "figure";
 
     public Figure(){
