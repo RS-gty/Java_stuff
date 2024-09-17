@@ -4,15 +4,15 @@ import linalg.Vector3d;
 
 import java.lang.Math;
 
-public class Dot {
-    public double x,y,z ;
-    public Vector3d position ;
+public class Dot extends Figure {
+    public String tag;
 
     public Dot(Vector3d position){
         this.position = position;
         this.x = position.x;
         this.y = position.y;
         this.z = position.z;
+        this.tag = "dot";
     }
 
     public Dot(double px, double py, double pz) {
@@ -24,5 +24,11 @@ public class Dot {
 
     public double getDistance() {
         return Math.sqrt(x*x + y*y + z*z);
+    }
+
+    @Override
+    public Dot register(FigureSet set) {
+        set.add(this, "dot");
+        return this;
     }
 }

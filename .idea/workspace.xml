@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="linalg addition">
+    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="Camera Feature">
+      <change afterPath="$PROJECT_DIR$/src/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/figure/Figure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/figure/FigureSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/figure/Renderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/camera/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/camera/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/enums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/enums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/Dot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Dot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linalg/Vector3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linalg/Vector3d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linalg/matrix/Matrix3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linalg/matrix/Matrix3d.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +67,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true",
+    "应用程序.Display.executor": "Run",
     "应用程序.Main.executor": "Run"
   }
 }]]></component>
@@ -78,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726494285552</updated>
-      <workItem from="1726494286568" duration="15815000" />
+      <workItem from="1726494286568" duration="25886000" />
     </task>
     <task id="LOCAL-00001" summary="u1">
       <option name="closed" value="true" />
@@ -104,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726510130926</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Camera Feature">
+      <option name="closed" value="true" />
+      <created>1726544970214</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726544970214</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +131,7 @@
     <MESSAGE value="u1" />
     <MESSAGE value="class addition" />
     <MESSAGE value="linalg addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="linalg addition" />
+    <MESSAGE value="Camera Feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Camera Feature" />
   </component>
 </project>

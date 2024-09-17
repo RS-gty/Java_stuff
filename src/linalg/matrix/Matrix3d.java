@@ -19,11 +19,11 @@ public class Matrix3d {
         }
         return this;
     }
-    public Vector3d multiply(Vector3d v){
+    public Vector3d multiply(Vector3d v) {
         double[] nums = new double[3];
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             double result = 0;
-            for (int j = 0; j < 3; j++){
+            for (int j = 0; j < 3; j++) {
                 result += this.matrix[i][j] * v.array[j];
             }
             nums[i] = result;

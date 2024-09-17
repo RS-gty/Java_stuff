@@ -44,4 +44,8 @@ public class Vector3d {
     public double dot(Vector3d p) {
         return this.x * p.x + this.y * p.y + this.z * p.z;
     }
+
+    public Vector3d random(double range){
+        return new Vector3d(Math.random()*range, Math.random()*range, Math.random()*range);
+    }
 }

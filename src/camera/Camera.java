@@ -53,6 +53,6 @@ public class Camera {
         Vector3d reVector = Tposition.sub(position);
         reVector = this.roll_rotation.multiply(this.pitch_rotation.multiply(this.yaw_rotation.multiply(reVector)));
         double width  = reVector.x * Math.tan(fov / 2);
-        return (width >= reVector.y && width * (ratio[1] / ratio[0]) >= reVector.z);
+        return (width >= Math.abs(reVector.y) && width * (ratio[1] / ratio[0]) >= Math.abs(reVector.z));
     }
 }
