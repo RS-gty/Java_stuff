@@ -75,8 +75,12 @@ public class Camera {
     public double[] getRelativePosition(Vector3d Tposition){
         Vector3d reVector = Tposition.sub(position);
         reVector = this.roll_rotation.multiply(this.pitch_rotation.multiply(this.yaw_rotation.multiply(reVector)));
-        double width  = reVector.x * Math.tan(Wfov / 2);
-        double height = reVector.y * Math.tan(Wfov / 2);
-        return new double[]{reVector.y / width, reVector.z / width * (ratio[1] / ratio[0])};
+        if (reVector.x > 0) {
+            double width = reVector.x * Math.tan(Wfov / 2);
+            double height = reVector.y * Math.tan(Wfov / 2);
+            return new double[]{reVector.y / width, reVector.z / width * (ratio[1] / ratio[0])};
+        } else{
+            return null;
+        }
     }
 }

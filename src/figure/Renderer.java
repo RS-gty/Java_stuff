@@ -21,9 +21,11 @@ public class Renderer {
             switch(this.figureSet.tags[i]){
                 case "dot":
                     double[] position = camera.getRelativePosition(this.figureSet.figures[i].position);
-                    g.setColor(Color.RED);
-                    g.fillOval((int) ((1 + position[0]) * this.width / 2)-10, (int) ((1 + position[1]) * this.height / 2)-10,
-                            20, 20);
+                    if (position != null){
+                        g.setColor(Color.RED);
+                        g.fillOval((int) ((1 + position[0]) * this.width / 2)-10, (int) ((1 + position[1]) * this.height / 2)-10,
+                                20, 20);
+                    }
                     break;
                 case "figure":
                     g.setColor(Color.CYAN);

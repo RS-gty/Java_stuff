@@ -7,25 +7,40 @@ import linalg.Vector3d;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Display extends JPanel {
     private FigureSet figureSet;
-    private Camera camera;
+    private static Camera camera;
     private Renderer renderer;
     private static int width;
     private static int height;
+    private static double t = 0;
 
-    public Display(FigureSet figureSet,Camera camera, int width, int height) {
+    public Display(FigureSet figureSet,Camera pcamera, int width, int height) {
         this.figureSet = figureSet;
         this.width = width;
         this.height = height;
-        renderer = new Renderer(figureSet, camera, width, height);
+
+        Timer timer = new Timer(30, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                t += 0.03;// 更新动画状态
+                camera = new Camera(new Vector3d(2, -6, 0), t,0, 0, 2*Math.PI/4,
+                        2*Math.PI/4, new double[]{(double)1, (double)1});
+                renderer = new Renderer(figureSet, camera, width, height);
+                repaint();  // 重新绘制
+            }
+        });
+        timer.start();
     }
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         renderer.render(g);
     }
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("Draw Line");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -49,8 +64,6 @@ public class Display extends JPanel {
         dot8 .register(figureSet);
 
         double[] ratio = {1, 1};
-
-        Camera camera = new Camera(new Vector3d(2, -5, 0), Math.PI/2,0, 0, 2*Math.PI/4, 2*Math.PI/4, ratio);
 
         Display panel = new Display(figureSet, camera, 1000, 1080);
 

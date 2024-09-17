@@ -7,7 +7,6 @@
     <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="Display &amp; Renderer addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/camera/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/camera/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/figure/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Renderer.java" afterDir="false" />
     </list>
@@ -83,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726494285552</updated>
-      <workItem from="1726494286568" duration="29315000" />
+      <workItem from="1726494286568" duration="30376000" />
     </task>
     <task id="LOCAL-00001" summary="u1">
       <option name="closed" value="true" />
@@ -125,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726564035711</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Display &amp; Renderer addition">
+      <option name="closed" value="true" />
+      <created>1726571833406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726571833406</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
