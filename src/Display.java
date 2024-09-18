@@ -25,7 +25,7 @@ public class Display extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 t += 0.03;// 更新动画状态
-                camera = new Camera(new Vector3d(-5, t, 0), 0,0, 0, 2*Math.PI/4,
+                camera = new Camera(new Vector3d(-5, 2, 0), 0,0, 0, 2*Math.PI/4,
                         2*Math.PI/4, new double[]{(double)1, (double)1});
                 renderer = new Renderer(figureSet, camera, width, height);
                 repaint();  // 重新绘制

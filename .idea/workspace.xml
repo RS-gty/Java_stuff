@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="Animation">
-      <change afterPath="$PROJECT_DIR$/src/figure/LineFigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/figure/PolygonFigure.java" afterDir="false" />
+    <list default="true" id="708d6efb-02a8-400e-83d8-0029a8da5ae7" name="更改" comment="Line &amp; Polygon Figure Addition">
+      <change afterPath="$PROJECT_DIR$/src/figure/TriangleFigure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Dot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Dot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/PolygonFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/PolygonFigure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/figure/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linalg/Vector3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linalg/Vector3d.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RS-gty"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RS-gty&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:RS-gty/Java_stuff.git",
-    "accountId": "e1d5f184-026b-4235-9575-5c69e0bf1bfc"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:RS-gty/Java_stuff.git&quot;,
+    &quot;accountId&quot;: &quot;e1d5f184-026b-4235-9575-5c69e0bf1bfc&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2m9gcCjKGcvgGKNQMfEmXy8Wsso" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,6 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,7 +85,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726494285552</updated>
-      <workItem from="1726494286568" duration="40180000" />
+      <workItem from="1726494286568" duration="44651000" />
+      <workItem from="1726669005470" duration="357000" />
+      <workItem from="1726669379798" duration="3000" />
+      <workItem from="1726669389474" duration="1000" />
+      <workItem from="1726669406701" duration="31000" />
+      <workItem from="1726669674950" duration="4123000" />
     </task>
     <task id="LOCAL-00001" summary="u1">
       <option name="closed" value="true" />
@@ -143,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726572842017</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Line &amp; Polygon Figure Addition">
+      <option name="closed" value="true" />
+      <created>1726583983347</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726583983347</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +180,7 @@
     <MESSAGE value="Camera Feature" />
     <MESSAGE value="Display &amp; Renderer addition" />
     <MESSAGE value="Animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Animation" />
+    <MESSAGE value="Line &amp; Polygon Figure Addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Line &amp; Polygon Figure Addition" />
   </component>
 </project>

@@ -1,12 +1,14 @@
 package figure;
 
 import figure.*;
+import linalg.Vector3d;
 
 public class PolygonFigure extends Figure {
     public double[] xPoints = new double[0], yPoints = new double[0];
     public Dot[] Dots;
     public int length = 0;
     public double[] def_color = {Math.random(), Math.random(), Math.random()};
+    public Vector3d normal_vector;
 
     public PolygonFigure(Dot[] dots) {
         for (Dot dot : dots) {

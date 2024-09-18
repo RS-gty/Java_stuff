@@ -1,6 +1,7 @@
 package figure;
 
 import camera.Camera;
+import linalg.Vector3d;
 
 import java.awt.*;
 
@@ -14,6 +15,27 @@ public class Renderer {
         this.camera = camera;
         this.width = width;
         this.height = height;
+    }
+    public void render_polygon(PolygonFigure figure, Graphics g){
+        int[] xpos = new int[0];
+        int[] ypos = new int[0];
+        double[] temp;
+        for (int j = 0; j < figure.length; j++){
+            temp = camera.getRelativePosition(figure.Dots[j].position);
+            if (temp != null) {
+                int[] newxpos = new int[xpos.length + 1];
+                int[] newypos = new int[ypos.length + 1];
+                System.arraycopy(xpos, 0, newxpos, 0, xpos.length);
+                System.arraycopy(ypos, 0, newypos, 0, ypos.length);
+
+                newxpos[newxpos.length - 1] = (int) ((1 + temp[0]) * this.width / 2);
+                newypos[newypos.length - 1] = (int) ((1 + temp[1]) * this.height / 2);
+                xpos = newxpos;
+                ypos = newypos;
+            }
+        }
+        g.setColor(Color.getHSBColor((float) figure.def_color[0], (float) figure.def_color[1], (float) figure.def_color[2]));
+        g.fillPolygon(xpos, ypos, xpos.length);
     }
 
     public void render(Graphics g){
@@ -40,25 +62,7 @@ public class Renderer {
                     break;
                 case "polygonfigure":
                     PolygonFigure figure1 = (PolygonFigure) this.figureSet.figures[i];
-                    int[] xpos = new int[0];
-                    int[] ypos = new int[0];
-                    double[] temp;
-                    for (int j = 0; j < figure1.length; j++){
-                        temp = camera.getRelativePosition(figure1.Dots[j].position);
-                        if (temp != null) {
-                            int[] newxpos = new int[xpos.length + 1];
-                            int[] newypos = new int[ypos.length + 1];
-                            System.arraycopy(xpos, 0, newxpos, 0, xpos.length);
-                            System.arraycopy(ypos, 0, newypos, 0, ypos.length);
-
-                            newxpos[newxpos.length - 1] = (int) ((1 + temp[0]) * this.width / 2);
-                            newypos[newypos.length - 1] = (int) ((1 + temp[1]) * this.height / 2);
-                            xpos = newxpos;
-                            ypos = newypos;
-                        }
-                    }
-                    g.setColor(Color.getHSBColor((float) figure1.def_color[0], (float) figure1.def_color[1], (float) figure1.def_color[2]));
-                    g.fillPolygon(xpos, ypos, xpos.length);
+                    render_polygon(figure1, g);
                     break;
             }
         }
